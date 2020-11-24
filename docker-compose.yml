@@ -1,0 +1,18 @@
+version: '2'
+services:
+  node-api:
+    build: ./node-service
+    ports:
+     - "3000:3000"
+    depends_on:
+     - db
+    environment:
+     - DB_HOST=db
+    volumes:
+     - ./node-service:/app/api
+     
+  db:
+    build: ./db-service
+    ports:
+      - 3307:3306
+    

@@ -1,0 +1,78 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Api-test",
+		"_postman_id": "bc7a10af-4b54-9d51-cb57-9c2c1063fe53",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create project",
+			"request": {
+				"url": "localhost:3000/projects",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"222\",\n\t\"jobs\":[\n\t\t{\n\t\t\t\"creationDate\":\"2020-11-24 00:00:00\",\n\t\t\t\"status\":\"pending\",\n\t\t\t\"price\":0.0\n\t\t}\n\t]\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get job",
+			"request": {
+				"url": "localhost:3000/jobs/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update job",
+			"request": {
+				"url": "localhost:3000/jobs/1",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Filter by status",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Sort",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

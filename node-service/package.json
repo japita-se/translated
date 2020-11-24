@@ -1,0 +1,21 @@
+{
+  "name": "traslated_api",
+  "version": "1.0.0",
+  "description": "simple rest ",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "giuseppe de marco",
+  "license": "ISC"
+}
