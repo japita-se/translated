@@ -49,8 +49,8 @@ Job.findByStatus = (status, result) => {
             result(null, res[0]);
             return;
         }
-        // not found 
-        result({ kind: "not_found" }, null);
+        
+        
     });
 };
 Job.find = (jobId, result) => {
@@ -67,7 +67,7 @@ Job.find = (jobId, result) => {
           return;
       }
       // not found 
-      result({ kind: "not_found" }, null);
+      result({ kind: "not_found_" }, null);
   });
 };
 Job.sortByKey = (key="price", limit=10, result=()=>{}) => {

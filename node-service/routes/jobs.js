@@ -2,9 +2,9 @@ module.exports = app => {
   const jobs = require("../controllers/jobs_controller.js");
   // Find by jobId
 
-  app.get("/jobs/:jobId", jobs.find);
+  app.get("/jobs", jobs.find);
   // Filter by status
-  app.get("/jobs/filter/:status", jobs.filterByStatus);
+  app.get("/jobs/:status", jobs.filterByStatus);
   
   app.get("/jobs/", jobs.sortByKey);
   // Update a Job with jobId
